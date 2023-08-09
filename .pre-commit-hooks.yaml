@@ -1,8 +1,8 @@
- id: ggshield
+# We set `pass_filenames` to `false` because ggshield gets filenames from commit IDs.
+- id: ggshield
   name: ggshield (pre-commit)
   entry: ggshield
   description: Runs ggshield to detect hardcoded secrets, security vulnerabilities and policy breaks.
   stages: [commit]
   args: ['secret', 'scan', 'pre-commit']
   language: python
-  pass_filenames: false
