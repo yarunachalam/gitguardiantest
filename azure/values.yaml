@@ -5,9 +5,9 @@ createAzureOperatorSecret: true
 certManagerResourcesAPIVersion: cert-manager.io/v1alpha2
 
 # azureTenantID is the AAD tenant that the subscription is in
-azureTenantID: ""
+azureTenantID: "3333332233"
 # azureSubscriptionID is the Azure Subscription the operator will act against.
-azureSubscriptionID: ""
+azureSubscriptionID: "12344444444444444"
 
 # azureOperatorKeyvault is the Azure Key Vault to store secrets in. This field is optional.
 azureOperatorKeyvault: ""
@@ -16,11 +16,11 @@ azureOperatorKeyvault: ""
 cloudEnvironment: AzurePublicCloud
 
 # azureClientID is the client ID of the Azure Service Principal or Managed Identity to use to authenticate with Azure.
-azureClientID: ""
+azureClientID: "4242525324324"
 
 # azureClientSecret is the client secret of the Azure Service Principal used to authenticate with Azure.
 # This is required when using Service Principal authentication.
-azureClientSecret: ""
+azureClientSecret: "AAAAAABBBBBCCC"
 
 # azureUseMI determines if ASO will use a Managed Identity to authenticate.
 azureUseMI: False
