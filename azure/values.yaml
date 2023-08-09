@@ -1,0 +1,29 @@
+# Create secret or use an existing secret
+createAzureOperatorSecret: true
+
+# api version to use for cert-manager custom resources. Depends on the version of cert-manager which is deployed externally to this chart
+certManagerResourcesAPIVersion: cert-manager.io/v1alpha2
+
+# azureTenantID is the AAD tenant that the subscription is in
+azureTenantID: ""
+# azureSubscriptionID is the Azure Subscription the operator will act against.
+azureSubscriptionID: ""
+
+# azureOperatorKeyvault is the Azure Key Vault to store secrets in. This field is optional.
+azureOperatorKeyvault: ""
+
+# cloudEnvironment is the cloud environment. Possible values include: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud
+cloudEnvironment: AzurePublicCloud
+
+# azureClientID is the client ID of the Azure Service Principal or Managed Identity to use to authenticate with Azure.
+azureClientID: ""
+
+# azureClientSecret is the client secret of the Azure Service Principal used to authenticate with Azure.
+# This is required when using Service Principal authentication.
+azureClientSecret: ""
+
+# azureUseMI determines if ASO will use a Managed Identity to authenticate.
+azureUseMI: False
+
+# azureSecretNamingVersion allows choosing the algorithm used to derive secret names. Version 2 is recommended.
+azureSecretNamingVersion: "2"
