@@ -1,4 +1,4 @@
 [default]
-aws_access_key_id = TESTESTTESTTEST
-aws_secret_access_key = 12345akKJD34Addadgggggggg
+aws_access_key_id = AKIAIOSFODNN7EXAMPLE
+aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY 
 region = us-east-2
