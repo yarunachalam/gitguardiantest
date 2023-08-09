@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/yarunachalam/gitguardiantest.git 
+    rev: v1.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: ggshield
+        description: Runs ggshield to detect hardcoded secrets, security vulnerabilities and policy breaks
+        language_version: python3
+        stages: [commit]
